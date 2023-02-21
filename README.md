@@ -9,3 +9,5 @@ To extract, format, store, aggregate, and analyze meaningful statistics in a rea
 * Current Win/Loss Streak
 * ELO Rating Overtime
 * All Time or Monthly Dashboard Views
+
+https://lookerstudio.google.com/reporting/498fd13b-6afe-4ec5-b447-2736f688ceba
