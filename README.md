@@ -4,7 +4,7 @@
 ## Purpose
 To extract, format, store, aggregate, and analyze meaningful statistics to improve your chess game including:
 * Win/Loss/Draw Record
-* Win Percentage as White or Black
+* Win Percentage as White and Black
 * Win Percentage vs. Higher and Lower ELOs
 * Current Win/Loss Streak
 * ELO Rating Overtime
