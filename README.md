@@ -23,6 +23,6 @@ These scripts are automated with cron on a local machine to maintain up-to-date 
 
 ## Whats Next?
 * Replace the cron jobs with a tool that can run independently from the local machine. For example, AWS Lambda, Google Cloud Function, etc.
-* Develop a script that transforms the JSON data for moves made during a match to determine the Opening/Defense(s) used and aggregate "Favorites" and the "Win Percentages with 'x' openings"
+* Develop a script that transforms the JSON data for moves made during a match to determine the Opening/Defense(s) used and aggregate "Favorites" and the "Win Percentages with 'x' openings" (stockfish)
 * Add an option to visualize any month of chess stats for the user, ths will involve getting the "Account Created Date" and to create a monthly dashboard for each month since inception. This also will allow another feature where you can view "All Time" stats by 'UNION ALL' of the monthly tables from creation.
 * Create a functioning site that allows user to login to Chess.com and this authentication will provide the username needed for the inital API call and leverage a full-fledged performance dashboard
