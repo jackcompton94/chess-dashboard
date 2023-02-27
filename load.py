@@ -2,6 +2,7 @@ from datetime import datetime, time
 import os
 from google.cloud import bigquery
 import table
+import view
 
 # Table name date config
 month = datetime.today()
@@ -63,6 +64,9 @@ else:
     with open(file_path, "rb") as source_file:
         job = client.load_table_from_file(source_file, table_id, job_config=job_config)
 
+    # Initialize Views
+    view.initialize_views(client, month, table_id)
+    
     print(job.result())
 
     table = client.get_table(table_id)
