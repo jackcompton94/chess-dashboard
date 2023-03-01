@@ -22,7 +22,7 @@ client = bigquery.Client()
 job_config = bigquery.LoadJobConfig(
     source_format = bigquery.SourceFormat.CSV,
     skip_leading_rows = 1,
-    autodetect = True
+    autodetect = False
 )
 
 # Sets the id of the table - "peak-vortex-376919.chess_dashboard" is the BigQuery dataset name
