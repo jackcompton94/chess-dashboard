@@ -14,8 +14,8 @@ To extract, format, store, aggregate, and analyze meaningful statistics in a rea
 * All Time or Monthly Dashboard Views
 
 ## How it works
-* __main.py__ interacts with the Chess.com API and extracts JSON and formats the relevant data into a local CSV
-* __load.py__ interacts with the BigQuery API to create and maintain the local CSV in the cloud
+* __data_extract.py__ interacts with the Chess.com API and extracts JSON and formats the relevant data into a local CSV
+* __data_load.py__ interacts with the BigQuery API to create and maintain the local CSV in the cloud
 * __view.py__ interacts with the BigQuery API to initialize the views needed that are used in Looker Studio
 * __looker.py__ interacts with the Looker API to create and maintain the dashboards needed to visualize the statistics
 
