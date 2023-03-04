@@ -1,7 +1,8 @@
-import requests
-import json
 import csv
+import json
 from datetime import datetime
+import requests
+import data_load
 
 # # API calls
 # profileUrl = "https://api.chess.com/pub/player/v2j-c"
@@ -51,3 +52,6 @@ with open("/Users/jackcompton/PycharmProjects/chessDashboard/csvs/" + month.strf
 
             # Saving file locally
             writer.writerow([i, white['username'], str(white['rating']), white['result'], black['username'], str(black['rating']), black['result']])
+
+# Loads CSV to BigQuery
+data_load.upload_to_bigquery()
