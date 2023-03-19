@@ -11,11 +11,11 @@ def upload_to_bigquery():
     monthString = str(month.month)
 
     # Configures source_file name based on current date
-    file_path = "/Users/jackcompton/PycharmProjects/chessDashboard/csvs/" + month.strftime("%m_%Y") + "_games.csv"
+    file_path = "/Users/jackcompton/PycharmProjects/chess-dashboard/csvs/" + month.strftime("%m_%Y") + "_games.csv"
 
     # Authorize BigQuery
     os.environ[
-        "GOOGLE_APPLICATION_CREDENTIALS"] = '/Users/jackcompton/PycharmProjects/chessDashboard/peak-vortex-376919-de9924963ab6.json'
+        "GOOGLE_APPLICATION_CREDENTIALS"] = '/Users/jackcompton/GCP Token/peak-vortex-376919-de9924963ab6.json'
 
     # Creates a BigQuery client object and initializes the job
     client = bigquery.Client()

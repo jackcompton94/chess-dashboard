@@ -39,7 +39,7 @@ chessGames = json.dumps(gameResponseObject, indent=2)
 chessJSON = gameResponse.json()
 
 # Opening file locally
-with open("/Users/jackcompton/PycharmProjects/chessDashboard/csvs/" + month.strftime("%m_%Y") + "_games.csv", "w") as file:
+with open("/Users/jackcompton/PycharmProjects/chess-dashboard/csvs/" + month.strftime("%m_%Y") + "_games.csv", "w") as file:
     writer = csv.writer(file)
     writer.writerow(["game_id", "white", "white_rating", "white_result", "black", "black_rating", "black_result"])
     i = 0
