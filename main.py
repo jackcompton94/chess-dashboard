@@ -1,5 +1,6 @@
 import bigquery
 import chessdotcomAPI
+from config import config, config_tokens
 
 # # API calls
 # profileUrl = "https://api.chess.com/pub/player/v2j-c"

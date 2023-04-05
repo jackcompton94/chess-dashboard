@@ -3,6 +3,7 @@ import requests
 import json
 import csv
 
+
 def get_chess_games():
     # Chess data config
     month = datetime.today()
